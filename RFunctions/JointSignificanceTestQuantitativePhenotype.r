@@ -1,6 +1,6 @@
 JointSignificanceTestQuantitativePhenotype=function(pheno,snp.glf,MAF=NULL,cov=NULL,weight=1,MAF.upper.bound=0.99, MAF.lower.bound = 0.01){ 
   # step 1
-  sub.n.marker=(dim(snp.glf)[2])/3 # snp.glf need to be the multiple of 3.
+  sub.n.marker=(dim(snp.glf)[2])/3
   use = rep(TRUE,sub.n.marker)
   if (sub.n.marker>1){
   	for(w in 1:(sub.n.marker-1)){
